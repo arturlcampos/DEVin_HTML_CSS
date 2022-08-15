@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />  
+    <script src="./js/sprits.js"></script>       
+    <title>DEVinKnowledge</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+    <header>
+        <h1 id="titulo">DEVinKnowledge</h1><br/><h2 id="subtitulo">Learn, Code and Save</h2>
+    </header>
+        <legend>Titulo</legend>
+          <input type="text"id="titulo"></input><br>    
+        
+        <legend>Linguagem/Skill</legend>
+          <select type="select" id="select"> 
+            <option selected disabled value="">Selecione</option>
+            <option value="backEnd">BackEnd</option>
+            <option value="frontEnd">FrontEnd</option>
+            <option value="fullStack">FullStack</option>
+            <option value="softSkill">SoftSkill</option>
+          </select><br>
+
+          <legend>Categoria<legend>
+            <input type="text" id="categoria"></input><br>
+
+          <legend>Descricao<legend>
+            <textarea type="text"id="descricao" rows="5"></textarea><br>
+
+          <legend>Video You Tube<legend>
+            <input type="url"id="video"></input>
+            <button type="button" id="limpar" onclick="limpar()" >Limpar</button>              
+            <button type="button" id="botao" onclick="salvarDados()">Salvar</button><br>
+       </fieldset>  
+      </form> 
+    
+      <div class="direita">      
+          <legend>Total</legend>
+          <legend>FrontEnd</legend>
+          <legend>BackEnd</legend>
+          <legend>FullStack</legend>
+          <legend>SoftSkill</legend>
+          <br>
+         
+      
+
+        <div>
+          <input type="search">
+          <button type="button">pesquisar</button>
+          <button type="button" id="Excluir" onclick="limpar()" >Excluir</button>
+        </div>
+
+       <fieldset>
+        <h2>Título</h2>
+        <legend>Linguagem/Skill</legend>
+        
+        <legend>Categoria</legend>
+            
+        <legend>Descricao<legend>
+        
+          <button type="button" id="Video" onclick="limpar()" >Vídeo</button>              
+          <button type="button" id="Editar" onclick="salvarDados()">Editar</button>
+          <button type="button" id="Deletar" onclick="limpar()" >Deletar</button>              
+      </fieldset>     
+   
+    
+    </div> 
+    
+
+  </body>
+
+</html>
